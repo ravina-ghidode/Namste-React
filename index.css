@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-Items {
+    padding: 0px 20px;
+}
+
+.nav-Items>ul {
+    display: flex;
+    font-size: 24px;
+}
+
+.nav-Items>ul>li {
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.body {}
+
+.search {
+    padding: 10px;
+}
+
+.res-card {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+}
+
+.res-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.rest-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resimg1 {
+    width: 190px;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card {
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.login-btn {
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.user-card {
+    padding: 10px;
+    border: 1px solid black;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "namste-react",
+  "version": "1.0.0",
+  "description": "this is namste react by akshya",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravina26ghidode/namste-react.git"
+  },
+  "keywords": [],
+  "author": "ravina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravina26ghidode/namste-react/issues"
+  },
+  "homepage": "https://github.com/ravina26ghidode/namste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "browserslist": [
+    "last 10 Chrome version",
+    "last 2  Firefox version"
+  ]
+}
