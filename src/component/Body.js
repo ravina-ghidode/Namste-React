@@ -3,6 +3,7 @@ import RestrauCard from "./RestrauCard";
 import ResList from "../utils/mockdata";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
   const [listOfRest, setListOfRest] = useState([]);
   const [searchText, setSearchtext] = useState("");
@@ -33,6 +34,14 @@ const Body = () => {
     );
   };
 
+  const status = useOnlineStatus();
+  if (status === false) {
+    return (
+      <h1>
+        looks like your offline.. Please check your internet connection !!!
+      </h1>
+    );
+  }
   return listOfRest.length === 0 ? (
     <Shimmer />
   ) : (
