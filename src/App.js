@@ -8,7 +8,10 @@ import Contact from "./component/Contact";
 import Error from "./component/Error";
 import RestaurantMenu from "./component/RestaurantMenu";
 import Shimmer from "./component/Shimmer";
+import Cart from "./component/Cart";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 // import Grocery from "./component/Grocery";
 const Grocery = lazy(() => import("./component/Grocery"));
 const AppLayout = () => {
@@ -23,12 +26,14 @@ const AppLayout = () => {
     setUserInfo(data.name);
   }, []);
   return (
-    <UserContext.Provider value={{ loggedInUser: userInfo, setUserInfo }}>
-      <div className="app-layout">
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userInfo, setUserInfo }}>
+        <div className="app-layout">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 const appRouter = createBrowserRouter([
@@ -52,6 +57,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restuarant/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "/grocery",
