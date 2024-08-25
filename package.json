@@ -20,11 +20,14 @@
   "homepage": "https://github.com/ravina26ghidode/namste-react#readme",
   "devDependencies": {
     "parcel": "^2.12.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.41",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.10"
   },
   "dependencies": {
     "express": "^4.19.2",
     "http-proxy-middleware": "^3.0.0",
+    "namste-react": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0"
